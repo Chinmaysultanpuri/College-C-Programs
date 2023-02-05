@@ -23,7 +23,7 @@ main()
 
 float BHD(char Z, int N)
 {
-    if(Z == 'C')
+    if(Z == 'C'|| Z == 'c')
     {
         switch(N)
         {
@@ -33,7 +33,7 @@ float BHD(char Z, int N)
             case 700001 ... 900000 : return (N-(N-700000)*0.09-20000); break;
         }
     }
-    else if(Z == 'X')
+    else if(Z == 'X' || Z == 'cx')
     {
         switch(N)
         {
@@ -42,7 +42,7 @@ float BHD(char Z, int N)
             default : return (N-((N-1500000)*0.15)-30000); break;
         }
     }
-    else if(Z == 'E')
+    else if(Z == 'E' || Z == 'e')
     {
         switch(N)
         {
