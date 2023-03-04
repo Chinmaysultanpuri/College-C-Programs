@@ -19,7 +19,7 @@ int did(int a)
     }
     else if(a == 2)
     {
-        return(1);
+        return(2);
        
     }
     else
